@@ -6,6 +6,14 @@ $pink: #ff7373;
     font-family: Arial, Tahoma, San-srancis, sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
 body {
     margin: 0;
 }
@@ -123,5 +131,53 @@ body {
 }
 
 .featured-product {
-    margin-left: 855px
+    margin-left: 855px;
+    padding: 130px 0;
+
+    .main-p {
+        width: 420px;
+        color: #8a8784;
+    }
+    
+    .main-btn {
+        padding: 11px 47px;
+        background: $pink;
+    }
+}
+
+.featured-price {
+    color: $bordo;
+    font-family: 'TruenoLt';
+    font-size: 30px;
+}
+
+.featured-name {
+    color: $bordo;
+    font-family: 'TruenoUltBlk';
+    font-size: 70px;
+}
+
+.featured-details {
+    color: $pink;
+    font-family: 'TruenoUltBlk';
+    font-size: 50px;
+}
+
+.main-p {
+    color: #ffffff;
+    font-family: 'TruenoLt';
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.main-btn {
+    display: inline-block;
+    padding: 11px 30px;
+    color: #ffffff;
+    background: $bordo;
+    font-family: 'TruenoBd';
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-decoration: none;
 }
