@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'TruenoBd';
+  src: url("../fonts/TruenoBd.otf") format("otf");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'TruenoLt';
+  src: url("../fonts/TruenoLt.otf") format("otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'TruenoUltBlk';
+  src: url("../fonts/TruenoUltblk.otf") format("otf");
+  font-weight: bold;
+  font-style: normal; }
+
+* {
+  font-family: Arial, Tahoma, San-srancis, sans-serif; }
+
+body {
+  margin: 0; }
+
+.wrapper-big {
+  width: 1680px;
+  margin: 0 auto; }
+
+.wrapper-little {
+  width: 1110px;
+  margin: 0 auto; }
+
+.header-top {
+  min-height: 50px;
+  background: #472424; }
+
+.basket {
+  text-decoration: none; }
+
+.head-link, .items-selected, .login, .register {
+  height: 50px;
+  padding: 19px 20px;
+  color: #ffffff;
+  font-family: 'TruenoLt';
+  font-size: 13px;
+  line-height: 26px;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: top; }
+
+.items-selected {
+  color: #dcc5b8; }
+
+.login {
+  border-left: 1px solid #5a3a3a; }
+
+.register {
+  background: #ff7373; }
