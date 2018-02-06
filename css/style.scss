@@ -2,33 +2,33 @@ $bordo: #613232;
 $dark-bordo: #472424;
 $pink: #ff7373;
 
-@font-face {
-    font-family: 'TruenoBd';
-    src: url("../fonts/TruenoBd.otf") format("otf");
-    font-weight: bold;
-    font-style: normal; 
-}
-
-@font-face {
-    font-family: 'TruenoLt';
-    src: url("../fonts/TruenoLt.otf") format("otf");
-    font-weight: normal;
-    font-style: normal; 
-}
-
-@font-face {
-    font-family: 'TruenoUltBlk';
-    src: url("../fonts/TruenoUltblk.otf") format("otf");
-    font-weight: bold;
-    font-style: normal; 
-}
-
 * {
     font-family: Arial, Tahoma, San-srancis, sans-serif;
 }
 
 body {
     margin: 0;
+}
+
+@font-face {
+    font-family: 'TruenoBd';
+    src: url("../fonts/TruenoBd.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'TruenoLt';
+    src: url("../fonts/TruenoLt.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'TruenoUltBlk';
+    src: url("../fonts/TruenoUltblk.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal; 
 }
 
 .wrapper-big {
@@ -46,23 +46,35 @@ body {
     background: $dark-bordo;
 }
 .basket {
+    display: inline-block;
+    margin-left: 417px;
+    padding: 12px 20px 12px 40px;
     text-decoration: none;
 }
 
 .head-link {
-    height: 50px;
-    padding: 19px 20px;
+    display: inline-block;
+    padding: 12px 20px;
     color: #ffffff;
     font-family: 'TruenoLt';
     font-size: 13px;
     line-height: 26px;
     text-decoration: none; 
-    text-align: center;
     vertical-align: top;
+    
+    &:first-child {
+        padding-left: 0;
+    }
+}
+
+.price-selected {
+    @extend .head-link;
+    padding: 0;
 }
 
 .items-selected {
     @extend .head-link;
+    padding: 0;
     color: #dcc5b8;
 }
 
@@ -74,4 +86,42 @@ body {
 .register {
     @extend .head-link;
     background: $pink;
+}
+
+.header-middle {
+    min-height: 76px;
+    background: $bordo;
+
+    .nav-link {
+        padding: 22px 20px;
+    }
+
+    .logo {
+        margin-right: 236px;
+        padding-left: 0;
+    }
+}
+
+.nav-link  {
+    display: inline-block;
+    color: #ffffff;
+    font-family: 'TruenoLt';
+    font-size: 16px;
+    line-height: 26px;
+    text-decoration: none;
+    vertical-align: top;
+
+    &:last-child {
+        padding-right: 0;
+    }
+}
+
+.header-bottom {
+    height: 600px;
+    background: #f0efee;
+    vertical-align: top;
+}
+
+.featured-product {
+    margin-left: 855px
 }
